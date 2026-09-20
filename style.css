@@ -1,3 +1,68 @@
+
+.pricing-section,
+.pricing-section * {
+    box-sizing: border-box;
+}
+
+.pricing-section {
+    color: #e8edf7;
+}
+
+/* Equation text */
+.pricing-section .pricing-equation span {
+    color: #dce7ff !important;
+    text-shadow: 0 0 6px rgba(0, 140, 255, 0.15);
+}
+
+.pricing-section .pricing-equation b {
+    color: #a93cff !important;
+}
+
+.pricing-section .pricing-equation strong {
+    color: #00b7ff !important;
+}
+
+/* Roadmap */
+.pricing-section .future-development h3 {
+    color: #f1f5ff !important;
+}
+
+.pricing-section .future-development h3 span {
+    color: #a43cff !important;
+}
+
+.pricing-section .future-development p {
+    color: #d5d9e5 !important;
+}
+
+.pricing-section .future-development strong {
+    color: #00b7ff !important;
+}
+
+/* Pricing breakdown */
+.pricing-section .price-breakdown strong {
+    color: #00b7ff !important;
+}
+
+.pricing-section .price-breakdown p {
+    color: #d0d5df !important;
+}
+
+/* Main pricing text */
+.pricing-section .pricing-intro {
+    color: #d5d9e5 !important;
+}
+
+.pricing-section .price-node p {
+    color: #d2d7e2 !important;
+}
+
+.pricing-section .price-node h3 {
+    color: #00b7ff !important;
+}
+
+
+
 body{
     background:url("back.jpg");
 }
@@ -3485,4 +3550,864 @@ body{
         box-sizing: border-box;
     }
 
+}
+
+/* =========================================================
+   MIZCYR PRICING SYSTEM
+   ========================================================= */
+
+.pricing-section {
+    position: relative;
+    padding: 100px 5%;
+    overflow: hidden;
+}
+
+
+/* HEADER */
+
+.pricing-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.pricing-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+    color: #00aaff;
+
+    text-shadow:
+        0 0 8px rgba(0, 170, 255, 0.7);
+}
+
+.pricing-header h2 {
+    margin: 0;
+
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+.pricing-header h2 span {
+    background: linear-gradient(
+        90deg,
+        #008cff,
+        #8b2cff,
+        #d400ff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing-header p {
+    max-width: 700px;
+    margin: 20px auto 0;
+
+    line-height: 1.8;
+    opacity: 0.75;
+}
+
+
+/* TERMINAL */
+
+.pricing-terminal {
+    width: min(1200px, 100%);
+    margin: auto;
+
+    border: 1px solid rgba(0, 153, 255, 0.35);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 20, 45, 0.7),
+            rgba(15, 5, 35, 0.8)
+        );
+
+    box-shadow:
+        0 0 30px rgba(0, 120, 255, 0.08),
+        inset 0 0 50px rgba(100, 0, 255, 0.04);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* TECH CORNERS */
+
+.pricing-terminal::before,
+.pricing-terminal::after {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    pointer-events: none;
+}
+
+.pricing-terminal::before {
+    top: 0;
+    left: 0;
+
+    border-top: 1px solid #00aaff;
+    border-left: 1px solid #00aaff;
+}
+
+.pricing-terminal::after {
+    right: 0;
+    bottom: 0;
+
+    border-right: 1px solid #9d00ff;
+    border-bottom: 1px solid #9d00ff;
+}
+
+
+/* TERMINAL BAR */
+
+.terminal-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 18px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    background: rgba(0,0,0,0.35);
+}
+
+.terminal-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #00aaff;
+
+    box-shadow:
+        0 0 8px rgba(0,170,255,0.7);
+}
+
+.terminal-dot:nth-child(2) {
+    background: #7d2cff;
+}
+
+.terminal-dot:nth-child(3) {
+    background: #d000ff;
+}
+
+.terminal-path {
+    margin-left: 10px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.75rem;
+
+    color: rgba(255,255,255,0.55);
+
+    letter-spacing: 1px;
+}
+
+
+/* BODY */
+
+.terminal-body {
+    padding: clamp(25px, 5vw, 55px);
+}
+
+.code-comment {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family: "Courier New", monospace;
+
+    color: #168dff;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 1px;
+}
+
+
+/* MAIN PRICE */
+
+.price-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(0, 153, 255, 0.3);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 120, 255, 0.07),
+            rgba(130, 0, 255, 0.08)
+        );
+
+    border-radius: 8px;
+}
+
+.price-label {
+    font-family: "Courier New", monospace;
+
+    font-size: 0.8rem;
+
+    color: rgba(255,255,255,0.6);
+
+    letter-spacing: 2px;
+}
+
+.price-main strong {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+
+    color: #00aaff;
+
+    text-shadow:
+        0 0 15px rgba(0,170,255,0.45);
+}
+
+.price-main i {
+    font-style: normal;
+
+    color: #a000ff;
+}
+
+
+/* INTRO */
+
+.pricing-intro {
+    max-width: 850px;
+
+    margin: 30px auto 45px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,0.72);
+
+    text-align: center;
+}
+
+
+/* WEBSITE TYPES */
+
+.pricing-types {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+.price-node {
+    position: relative;
+
+    min-height: 245px;
+
+    padding: 22px;
+
+    border: 1px solid rgba(0, 153, 255, 0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0, 80, 150, 0.08),
+            rgba(100, 0, 160, 0.08)
+        );
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.price-node:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 174, 255, 0.75);
+
+    box-shadow:
+        0 0 20px rgba(0, 140, 255, 0.12);
+}
+
+.node-number {
+    display: block;
+
+    margin-bottom: 15px;
+
+    font-family: "Courier New", monospace;
+
+    color: #8d2cff;
+
+    font-size: 0.75rem;
+}
+
+.price-node h3 {
+    margin: 0 0 15px;
+
+    font-size: 1rem;
+
+    color: #00aaff;
+
+    letter-spacing: 1px;
+}
+
+.price-node p {
+    margin: 0;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+
+    color: rgba(255,255,255,0.7);
+}
+
+.node-use {
+    display: block;
+
+    margin-top: 20px;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.65rem;
+
+    color: #9d4dff;
+
+    letter-spacing: 1px;
+}
+
+
+/* CALCULATION */
+
+.pricing-calculation {
+    margin-top: 55px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.pricing-equation {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border: 1px dashed rgba(140, 50, 255, 0.5);
+
+    background: rgba(90, 0, 150, 0.05);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.75rem;
+
+    text-align: center;
+}
+
+.pricing-equation b {
+    color: #8f35ff;
+}
+
+.pricing-equation strong {
+    color: #00aaff;
+
+    text-shadow:
+        0 0 8px rgba(0,170,255,0.5);
+}
+
+
+/* BREAKDOWN */
+
+.price-breakdown {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.price-breakdown > div {
+    padding: 20px;
+
+    border-left: 2px solid #008cff;
+
+    background: rgba(255,255,255,0.025);
+}
+
+.price-breakdown span {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: "Courier New", monospace;
+
+    color: #8e32ff;
+
+    font-size: 0.7rem;
+}
+
+.price-breakdown strong {
+    font-size: 0.9rem;
+
+    color: #00aaff;
+}
+
+.price-breakdown p {
+    margin: 10px 0 0;
+
+    font-size: 0.8rem;
+
+    line-height: 1.6;
+
+    color: rgba(255,255,255,0.6);
+}
+
+
+/* PRICE RANGE */
+
+.price-range-box {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(0, 153, 255, 0.25);
+
+    background: rgba(0,0,0,0.2);
+}
+
+.range-heading,
+.range-labels {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.range-heading span {
+    font-family: "Courier New", monospace;
+
+    font-size: 0.7rem;
+
+    color: #8d38ff;
+}
+
+.range-heading strong {
+    color: #00aaff;
+
+    font-size: 1.2rem;
+}
+
+.range-line {
+    height: 5px;
+
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    overflow: hidden;
+}
+
+.range-progress {
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #00aaff,
+            #7c2cff,
+            #d000ff
+        );
+
+    box-shadow:
+        0 0 12px rgba(0,150,255,0.6);
+}
+
+.range-labels span {
+    font-family: "Courier New", monospace;
+
+    color: #00aaff;
+}
+
+.range-labels small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: rgba(255,255,255,0.4);
+
+    font-size: 0.55rem;
+}
+
+
+/* DECEMBER NOTICE */
+
+.future-development {
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 45px;
+
+    padding: 28px;
+
+    border: 1px solid rgba(150, 0, 255, 0.45);
+
+    background:
+        linear-gradient(
+            110deg,
+            rgba(0,100,255,0.06),
+            rgba(150,0,255,0.09)
+        );
+
+    position: relative;
+}
+
+.future-development::before {
+    content: "ROADMAP";
+
+    position: absolute;
+
+    top: -10px;
+    right: 20px;
+
+    padding: 3px 10px;
+
+    background: #080811;
+
+    border: 1px solid rgba(150,0,255,0.5);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.6rem;
+
+    color: #a94aff;
+
+    letter-spacing: 1px;
+}
+
+.future-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 65px;
+    height: 65px;
+
+    border: 1px solid #8d2cff;
+
+    color: #9d3cff;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 1.3rem;
+
+    box-shadow:
+        0 0 18px rgba(130,0,255,0.18);
+}
+
+.future-label {
+    font-family: "Courier New", monospace;
+
+    font-size: 0.7rem;
+
+    color: #00aaff;
+
+    letter-spacing: 1.5px;
+}
+
+.future-development h3 {
+    margin: 8px 0 12px;
+
+    font-size: 1.1rem;
+}
+
+.future-development h3 span {
+    color: #9a3cff;
+}
+
+.future-development p {
+    margin: 7px 0;
+
+    color: rgba(255,255,255,0.65);
+
+    line-height: 1.7;
+
+    font-size: 0.85rem;
+}
+
+.future-development strong {
+    color: #00aaff;
+}
+
+
+/* STATUS */
+
+.scope-status {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border-top: 1px solid rgba(255,255,255,0.07);
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.7rem;
+
+    color: rgba(255,255,255,0.55);
+
+    letter-spacing: 1px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #00ff88;
+
+    box-shadow:
+        0 0 10px rgba(0,255,136,0.7);
+}
+
+
+/* CTA */
+
+.pricing-cta {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 55px auto 0;
+}
+
+.pricing-cta h3 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+
+    margin: 10px 0;
+}
+
+.pricing-cta p {
+    color: rgba(255,255,255,0.65);
+
+    line-height: 1.7;
+}
+
+.tech-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 24px;
+
+    border: 1px solid #008cff;
+
+    color: #00aaff;
+
+    text-decoration: none;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+}
+
+.tech-button:hover {
+    color: #fff;
+
+    background: rgba(0,140,255,0.12);
+
+    box-shadow:
+        0 0 20px rgba(0,140,255,0.2);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .pricing-types {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .price-breakdown {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .pricing-section {
+        padding: 70px 15px;
+    }
+
+    .terminal-body {
+        padding: 22px 15px;
+    }
+
+    .price-main {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .pricing-types {
+        grid-template-columns: 1fr;
+    }
+
+    .price-breakdown {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-equation {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .pricing-equation b {
+        text-align: center;
+    }
+
+    .future-development {
+        flex-direction: column;
+    }
+
+    .future-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .range-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+    .range-labels {
+        gap: 20px;
+    }
+
+    .range-labels span:last-child {
+        text-align: right;
+    }
+
+}
+
+
+
+.payments-section {
+    padding-top: 70px;
+}
+
+.payment-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.payment-label {
+    display: block;
+    color: #00d9ff;
+    font: 11px monospace;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.payment-terminal {
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.payment-line {
+    margin-top: 12px;
+    color: #00d9ff;
+}
+
+.payment-terminal p {
+    color: #8fa5b9;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+    .payment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pricing-section,
+    .payments-section {
+        width: min(94%, 1100px);
+        padding: 70px 0;
+    }
+
+    .price-main {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .price-grid,
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-equation {
+        justify-content: flex-start;
+        line-height: 2;
+    }
+
+    .terminal-body {
+        padding: 22px 17px;
+    }
 }
