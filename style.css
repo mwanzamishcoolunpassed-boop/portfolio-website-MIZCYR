@@ -4411,3 +4411,174 @@ body{
         padding: 22px 17px;
     }
 }
+
+
+
+
+/* =========================================================
+   MIZCYR — PROCESS / PAYMENT TEXT VISIBILITY
+   ========================================================= */
+
+.payment-section,
+.payment-section *,
+.process-section,
+.process-section *,
+.payment-process,
+.payment-process *,
+.pricing-section,
+.pricing-section * {
+    box-sizing: border-box;
+}
+
+
+/* Main text */
+
+.payment-section h1,
+.payment-section h2,
+.payment-section h3,
+.payment-section h4,
+.payment-section p,
+.payment-section li,
+
+.process-section h1,
+.process-section h2,
+.process-section h3,
+.process-section h4,
+.process-section p,
+.process-section li,
+
+.payment-process h1,
+.payment-process h2,
+.payment-process h3,
+.payment-process h4,
+.payment-process p,
+.payment-process li {
+    color: #e8edf7 !important;
+}
+
+
+/* Section headings */
+
+.payment-section h2,
+.payment-section h3,
+.process-section h2,
+.process-section h3,
+.payment-process h2,
+.payment-process h3 {
+    color: #f2f6ff !important;
+}
+
+
+/* Cyan technical labels */
+
+.payment-section .section-label,
+.payment-section .process-label,
+.payment-section .step-label,
+
+.process-section .section-label,
+.process-section .process-label,
+.process-section .step-label,
+
+.payment-process .section-label,
+.payment-process .process-label,
+.payment-process .step-label {
+    color: #00c8ff !important;
+
+    text-shadow:
+        0 0 8px rgba(0, 200, 255, 0.45);
+}
+
+
+/* Body paragraphs */
+
+.payment-section p,
+.process-section p,
+.payment-process p {
+    color: #d3d8e4 !important;
+
+    line-height: 1.75;
+}
+
+
+/* Secondary text */
+
+.payment-section small,
+.process-section small,
+.payment-process small {
+    color: #9da8b8 !important;
+}
+
+
+/* Number indicators */
+
+.payment-section .step-number,
+.process-section .step-number,
+.payment-process .step-number {
+    color: #9b3cff !important;
+
+    font-family: "Courier New", monospace;
+
+    text-shadow:
+        0 0 8px rgba(155, 60, 255, 0.4);
+}
+
+
+/* Important highlighted text */
+
+.payment-section strong,
+.process-section strong,
+.payment-process strong {
+    color: #00b8ff !important;
+}
+
+
+/* Payment status */
+
+.payment-section .payment-status,
+.process-section .payment-status,
+.payment-process .payment-status {
+    color: #00c8ff !important;
+}
+
+
+/* =========================================================
+   MIZCYR TECH CARDS
+   ========================================================= */
+
+.payment-section .process-card,
+.payment-section .payment-card,
+.process-section .process-card,
+.process-section .payment-card,
+.payment-process .process-card,
+.payment-process .payment-card {
+    color: #e8edf7 !important;
+
+    background:
+        rgba(5, 10, 30, 0.72);
+
+    border: 1px solid rgba(0, 160, 255, 0.25);
+}
+
+
+/* Card headings */
+
+.payment-section .process-card h3,
+.payment-section .payment-card h3,
+.process-section .process-card h3,
+.process-section .payment-card h3,
+.payment-process .process-card h3,
+.payment-process .payment-card h3 {
+    color: #00b8ff !important;
+}
+
+
+/* Card paragraphs */
+
+.payment-section .process-card p,
+.payment-section .payment-card p,
+.process-section .process-card p,
+.process-section .payment-card p,
+.payment-process .process-card p,
+.payment-process .payment-card p {
+    color: #d4d9e3 !important;
+}
